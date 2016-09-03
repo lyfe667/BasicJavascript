@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>window.navigator</title>
+<style>
+td {border:1px solid gray; 
+	padding:3px 5px;}
+</style>
+<script>
+function show()
+{
+	/*var msg="<table>"+
+	"<tr><td>appName</td><td>"+navigator.appName+"</td></tr>"+
+	"<tr><td>cookieEnabled</td><td>"+navigator.cookieEnabled+"</td></tr>"+
+	"</table>";
+	var mydate = new Date(95,9,22);
+	var msg= "year:"+mydate.getFullYear()+"<br>month:"+(mydate.getMonth()+1)+"<br>date:"+mydate.getDate();*/
+	var myRand;
+	var biggest;
+	with(Math)
+	{
+		myRand = random();
+		biggest= max(3,4,5);
+	}
+	var msg = "myRand = "+myRand+"<br>biggest = "+biggest;
+	var div1=document.getElementById("div1");
+	div1.innerHTML=msg;
+}
+</script>
+</head>
+<body>
+<div id="div1"></div>
+<input type="button" value="show button" onclick="show()"/>
+</body>
+</html>

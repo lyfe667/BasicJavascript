@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Switching Stylesheets with JavaScript</title>
+<style>
+body
+{
+	background-color:white;
+	color:red;
+	font:normal 24px arial,helvetica,sans-serif;
+	padding:20px;
+}
+</style>
+<style>
+body
+{
+	background:black;
+	color:yellow;
+	font:italic bold 24px "Times New Roman",serif;
+	padding: 20px;
+}
+</style>
+<script>
+window.onload=function()
+{
+	document.styleSheets[0].disabled=false;
+	document.styleSheets[1].disabled=true;
+}
+</script>
+</head>
+<body>
+Switching Stylesheets
+</body>
+</html>66

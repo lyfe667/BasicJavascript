@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Object Oriented Programming</title>
+<script>
+myNewObject = new Object();
+myNewObject.info = "this is a new object";
+myNewObject.showInfo = function()
+{
+	alert(this.info);
+};
+</script>
+</head>
+<input type="button" value="button1" onclick="myNewObject.showInfo();"/>
+</html>

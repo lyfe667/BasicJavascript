@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>auto menu</title>
+<script>
+function makeMenu()
+{
+	 var menuDiv=document.createElement("div");
+	 var menuUl=document.createElement("ul");
+	 menuDiv.appendChild(menuUl);
+	 var h2s = document.getElementsByTagName("h2");
+	 for(var i=0;i<h2s.length;i++)
+	 {
+		
+		var menuLi=document.createElement("li");
+		var menuA=document.createElement("a");
+		var newTextNode=document.createTextNode(h2s[i].childNodes[0].nodeValue);
+		menuA.appendChild(newTextNode);
+		menuA.setAttribute("href","#item"+i);
+		menuLi.appendChild(menuA);
+		menuUl.appendChild(menuLi);
+		var bodyA=document.createElement("a");
+		bodyA.setAttribute("name","item"+i);
+		document.body.insertBefore(bodyA,h2s[i]);
+	 }
+	 document.body.insertBefore(menuDiv,document.body.firstChild);
+}
+window.onload=function()
+{
+	makeMenu();
+}
+</script>
+</head>
+<body>
+<h1>English composition</h1>
+<h2>A Brave Child</h2>
+<p>Jack is ten years old, though he is not 
+doing well in study, he is a good child. He
+will never lie to his parents or make them angry.
+ Some day, Jack makes a mistake, he forgets to 
+ notice his aunt the important information.
+ His mother has told him many times. Jack is 
+ sad but he still tells his mother the truth. 
+ What a brave child. </p>
+ <h2>The Missing Dog</h2>
+ <p>There is a lovely dog in Luke¡¯s house. 
+ The family has raised it for two years. One day,
+ when Luke walks his dog in the evening, the 
+ dog runs away and then misses. Luke is very panic,
+ because he worries about the dog will be 
+ caught by the bad guys. Then the next morning, 
+ the dog goes home, what a surprise it is. </p>
+ <h2>An Interesting Class</h2>
+ <p>Today, I have an very interesting English class.
+ The teacher teaches us the new lesson, after 
+ explaining the new words, she asks us to make a 
+ performance of the five situations. All of us are 
+ so excited, we find the group and then rehearse for
+ a while. When we play the roles, we enjoy the show, 
+ it is such funny class.</p>
+ <h2>Happy Mother¡¯s Day</h2>
+ <p>My mother is the greatest mother in the world, 
+ she takes care of all the family chores and she
+ never complains. I know she it is not easy for her
+ to do so, for she gives up her career when she has 
+ me, so I am so thankful to her. On this mother¡¯s 
+ day, I just want to show her my gratitude and 
+ let her know that I love her so much. </p>
+ <h2>The Coming of Olympic Games</h2>
+ <p>My father likes to watch all kinds of sports, 
+ so when I spend the time with him, we watch the 
+ match together. The Summer Olympic Games is coming soon, 
+ I feel so excited, my father will follow the games 
+ and I will company him. It is a great time for both
+ of us. We share our opinion and talk like friends. </p>
+ 
+ <h2>My Future Goal</h2>
+ <p>I will be a middle school student soon. when I 
+ look back on my pass days, I find myself don¡¯t 
+ make a difference, I play most of the time and don¡¯t 
+ focus on my study. Now I make up my mind. In the 
+ future days, I must study with all my heart and 
+ learn as more as possible. So that I can store 
+ something for the future. </p>
+ <h2>The little Boy¡¯s Present</h2>
+ <p>Jack is seven years old. He lives in an ordinary
+ family, unlike other child, he is much mature 
+ and knows to be grateful to his parents. Jack 
+ always wants to give his mother a surprise, because 
+ he knows his mother has done so much for the family.
+ So he buys a flower and send to his mother. 
+ The mother is so moved and feel very happy.</p>
+ 
+</body>
+</html>

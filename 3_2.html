@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calling Functions</title>
+<Script>
+function buttonReport(buttonId,buttonName,buttonValue)
+{
+	alert("\nButton Id: "+buttonId+"\nButton Name: "+buttonName+"\nButton Value: "+buttonValue);
+}
+</Script>
+</head>
+<body>
+<input type="button" id="id1" name="left" value="left button" onclick="buttonReport(this.id,this.name,this.value)"/>
+<input type="button" id="id2" name="center" value="center button" onclick="buttonReport(this.id,this.name,this.value)"/>
+<input type="button" id="id3" name="right" value="right button" onclick="buttonReport(this.id,this.name,this.value)"/>
+</body>
+</html>

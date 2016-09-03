@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Canceling Default Behavior</title>
+<script>
+function checkForm()
+{
+	document.getElementById("form1").onsubmit=function()
+	{
+		if(""==document.getElementById("user").value)
+		{
+			alert("用户名不能为空");
+			return false;
+		}
+		else
+		{
+			alert("表单提交成功");
+			return true;
+		}
+	}
+}
+window.onload=checkForm;
+</script>
+</head>
+<body>
+<form id="form1">
+Name:<input type="text" value="" name="username" id="user"/><br>
+Phone:<input type="text" value="" name="telephone" id="phone"/><br>
+<input type="submit"/>
+</form>
+</body>
+</html>

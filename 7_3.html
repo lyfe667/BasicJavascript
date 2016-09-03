@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Object Oriented Programming</title>
+<script>
+function Person(personName)
+{
+	this.name=personName;
+	this.showInfo=function()
+	{
+		alert("this person is called "+this.name);
+	}
+}
+var person1 = new Person('Adam');
+var person2 = new Person('Eve');
+Person.prototype.sayHello = function()
+{
+	alert(this.name+":Hello");
+}
+function Student(number)
+{
+	this.num=number;
+	this.showNum=function()
+	{
+		alert(this.num+"\n"+this.name);
+	}
+}
+Student.prototype=new Person("Mary");
+var student1=new Student("11111");
+</script>
+</head>
+<body>
+<input type="button" value="person1 show info" onclick="person1.showInfo()"/>
+<input type="button" value="person2 show info" onclick="person2.showInfo()"/>
+<input type="button" value="person1 say hello" onclick="person1.sayHello()"/>
+<input type="button" value="person2 say hello" onclick="person2.sayHello()"/>
+<input type="button" value="student1 show Num" onclick="student1.showNum()"/>
+<input type="button" value="student1 show info" onclick="student1.showInfo()"/>
+</body>
+</html>

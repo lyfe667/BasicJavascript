@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animating a DOM Element</title>
+<style>
+div
+{
+	position:absolute;
+	border:1px solid black;
+	width:50px;
+	height:50px;
+	left:0px;
+	top:100px;
+}
+</style>
+<script>
+var timer1=null;
+function moveItRight()
+{
+	var el=document.getElementById("id1");
+	if(parseInt(el.style.left)>(screen.width-50))
+	{
+		el.style.left=0;
+	}
+	el.style.left=parseInt(el.style.left)+2+"px";
+	setTimeout(moveItRight,25);
+}
+window.onload = function()
+{
+	var el=document.getElementById("id1");
+	el.style.left="50px";
+	moveItRight();
+}
+</script>
+</head>
+<body>
+<div id="id1">Move it!</div>
+</body>
+</html>

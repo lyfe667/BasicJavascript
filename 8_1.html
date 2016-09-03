@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Parsing JSON</title>
+<script>
+function jsonParse()
+{
+	/*var inString = prompt("enter JSON object");
+	var out="";
+	myObject = JSON.parse(inString);
+	for(p in myObject)
+	{
+		out += p+":"+myObject[p]+"\n";
+	}
+	alert(out);*/
+	var Dan = new Object();
+	Dan.height=1.85;
+	Dan.age=41;
+	var str=JSON.stringify(Dan);
+	alert(str);
+}
+</script>
+</head>
+<body onload="jsonParse()">
+</body>
+</html>

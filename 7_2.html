@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Object Oriented Programming</title>
+<script>
+function myObject(info)
+{
+	this.info = info;
+	this.showInfo = function()
+	{
+		alert(this.info);
+	}
+	this.setInfo = function(newInfo)
+	{
+		this.info = newInfo;
+	}
+}
+var mo1=new myObject("mo1 info");
+var mo2=new myObject("mo2 info");
+</script>
+</head>
+<body>
+<input type="button" value="show mo1 info" onclick="mo1.showInfo()"/>
+<input type="button" value="show mo2 info" onclick="mo2.showInfo()"/>
+<input type="button" value="change mo2 info" onclick="mo2.setInfo('mo2 info after changed')"/>
+</body>
+</html>

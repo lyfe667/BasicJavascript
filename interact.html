@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>interact with user</title>
+<script>
+function show()
+{
+	/*var answer = confirm("continue?");
+	if(true==answer)
+	{
+		alert("you want to continue");
+	}
+	else
+	{
+		alert("you do not want to continue");
+	}
+	var name = prompt("please input your name","root");
+	alert(name);	
+	var div1 = document.getElementById("div1");
+	div1.innerHTML="<p>new Text!</p>";
+	alert(history.length);
+	alert(location.href+"\n"+location.protocol);
+	location.href="http://www.baidu.com";
+	location.replace("http://www.baidu.com");
+	location.reload();
+	alert(isFinite(Math.sqrt(-1)));
+	var str1="this is str1";
+	var str2="this is str2";
+	var str12=str1.concat(str2);
+	alert(str1.lastIndexOf('is'));
+	alert(str1.replace("str","STR"));*/
+	var days = ['sun','mon','tue','wed','thu','fri','sat'];
+	var msg="";
+	for(i in days)
+	{
+		msg+=days[i];
+	}
+	alert(msg);
+}
+</script>
+</head>
+<body>
+<div id="div1">
+<p>original text!</p>
+</div>
+<input type="button" id="button1" value="show button" onclick="show()">
+</body>
+</html>
